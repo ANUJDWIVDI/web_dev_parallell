@@ -1,0 +1,217 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+.container {
+    margin-left: 20px; /* Align content to the left */
+}
+
+.container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding-left: 0; /* Align list items to the left */
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+.container a.start {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.container a.start:hover {
+    background-color: #0056b3;
+}
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #333;
+            margin: 0;
+        }
+
+        main {
+            padding-bottom: 50px;
+        }
+
+        main h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+
+        form input {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #333;
+            margin: 0;
+        }
+
+        main {
+            padding-bottom: 50px;
+        }
+
+        main h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        form {
+
+        }
+
+        form input {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        .current {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .choices li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
