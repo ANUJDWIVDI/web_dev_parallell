@@ -1,6 +1,4 @@
 <?php
-
-
 //Create connection credentials
 $db_host = 'localhost';
 $db_name = 'quiz_webd';
@@ -30,6 +28,4 @@ if($mysqli->connect_error){
 
 	exit;
 }
-
-
 ?>

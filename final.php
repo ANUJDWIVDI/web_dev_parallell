@@ -1,6 +1,9 @@
 <?php include "database.php"; ?>
 <?php session_start(); ?>
 <?php
+
+    // This page will display the final score of the user
+
     // Create Select Query to fetch the final score from the session
     $final_score = $_SESSION['score'];
 

@@ -1,6 +1,9 @@
 <?php include "database.php"; ?>
 <?php session_start(); ?>
 <?php
+
+// This script sends an email to the user with the quiz results
+
 require 'vendor/autoload.php';
 
 // Check if form data is submitted
@@ -15,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $score = isset($_POST['score']) ? $_POST['score'] : null;
 
 
-    // Include PHPMailer autoloader
+    // Include PHPMailer autoloader and create an instance of PHPMailer
     require 'vendor/autoload.php';
 
     // Create a new PHPMailer instance

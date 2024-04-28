@@ -1,25 +1,26 @@
 <?php include "database.php"; ?>
 <?php session_start(); ?>
 <?php
-    //Set question number
+
+    // THIS IS THE CODE FOR THE QUIZ PAGE
     $number = (int) $_GET['n'];
 
-    //Get total number of questions
+    //Get total number of questions from database
     $query = "SELECT * FROM questions";
     $results = $mysqli->query($query) or die($mysqli->error.__LINE__);
     $total = $results->num_rows;
 
-    // Get Question
+    // Get Question from database
     $query = "SELECT * FROM `questions` WHERE question_number = $number";
 
-    //Get result
+    //Get result from database
     $result = $mysqli->query($query) or die($mysqli->error.__LINE__);
     $question = $result->fetch_assoc();
 
-    // Get Choices
+    // Get Choices from database
     $query = "SELECT * FROM `choices` WHERE question_number = $number";
 
-    //Get results
+    //Get results from database
     $choices = $mysqli->query($query) or die($mysqli->error.__LINE__);
 ?>
 <!DOCTYPE html>
@@ -28,7 +29,7 @@
     <meta charset="utf-8">
     <title>Web Development Quiz</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> // link to external css file
 
 </head>
 <body>

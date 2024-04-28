@@ -2,7 +2,7 @@
 <?php session_start(); ?>
 <?php 
 
-      //Check to see if score is set_error_handler
+    // this below code is to check if the score is set or not
 	if (!isset($_SESSION['score'])){
 	   $_SESSION['score'] = 0;
 	}
@@ -15,12 +15,12 @@ if($_POST){
 	$total = 3;
 
 
-	//Get total number of questions
+	//Get total number of questions from database
 	$query="SELECT * FROM `questions`";
 	$results = $mysqli->query($query) or die($mysqli->error.__LINE__);
 	$total=$results->num_rows;
 
-	//Get correct choice
+	//Get correct choice from database
 	$q = "select * from `choices` where question_number = $number and is_correct=1";
 	$result = $mysqli->query($q) or die($mysqli->error.__LINE__);
 	$row = $result->fetch_assoc();
@@ -28,16 +28,16 @@ if($_POST){
 
 
 
-	//compare answer with result
+	//compare answer with result and increment score if correct
 	if($correct_choice == $selected_choice){
 		$_SESSION['score']++;
 	}
 
 	if($number == $total){
-		header("Location: final.php");
+		header("Location: final.php"); // this will redirect to the final page
 		exit();
 	} else {
-	        header("Location: question.php?n=".$next."&score=".$_SESSION['score']);
+	        header("Location: question.php?n=".$next."&score=".$_SESSION['score']); // this will redirect to the next question
 	}
 }
 ?>

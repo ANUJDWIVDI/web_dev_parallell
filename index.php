@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    session_start(); // Start the session , this is required to store the user's name and email address for the quiz
     include "database.php";
 
     // Total questions
@@ -7,10 +7,10 @@
     $results = $mysqli->query($query) or die ($mysqli->error.__LINE__);
     $totalQuestions = $results->num_rows;
 
-    // Set number of questions for the quiz
-    $numberOfQuestions = 15;
+    // Set number of questions for the quiz for now (3)
+    $numberOfQuestions = 3;
 
-    // Set session variables for user's name and email
+    // Set session variables for user's name and email address
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['name'] = $_POST['name'];
         $_SESSION['email'] = $_POST['email'];
