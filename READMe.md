@@ -18,7 +18,7 @@ To set up the project locally, follow these steps:
 1. Clone the repository to your local machine:
 
     ```
-    git clone https://github.com/yourusername/web-development-quiz.git
+    git clone https://github.com/ANUJDWIVDI/web_dev_parallell
     ```
 
 2. Import the provided MySQL database dump (`quiz_webd.sql`) into your MySQL database server.
